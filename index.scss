@@ -1,0 +1,135 @@
+$primary: #524A4A;
+$secondary: #655C5C;
+
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', serif;
+}
+
+html, body{
+  width: auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+body{
+  background-color: #655C5C;
+}
+
+h1, h2, h3, h4, h5, p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+  min-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar{
+  padding: 17px 0px 17px 70px;
+  background-color: $primary;
+  color: #A59696;
+}
+
+.welcome{
+  max-width: 1225px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primary;
+  margin-top: 107px;
+  margin-bottom: 147px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 52px 54px 106px;
+  &__left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    > h2{
+      font-size: 46px;
+      margin-bottom: 16px;
+    }
+    > h3{
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 1.2px;
+      margin-bottom: 37px;
+    }
+    > img{
+      margin-bottom: 25px;
+    }
+    > input{
+      background-color: #645B5B;
+      border: none;
+      border-radius: 9px;
+      padding: 9px 41px;
+      width: 538px;
+      margin-bottom: 38px;
+      font-size: 22px;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+.sidebar{
+  &__btn{
+    border-radius: 9px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    &:hover{
+      border-color: #FCAA72;
+      color: #FCAA72;
+      background-color: #645b5b;
+    }
+    &--text:first-child{
+      margin-bottom: 37px;
+    }
+    &--text{
+      width: 164px;
+      height: 63px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &--img:not(:last-child){
+      margin-bottom: 26px;
+    }
+    &--img{
+      width: 113px;
+      height: 143px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img{
+        width: 64px;
+      }
+    }
+  }
+}
+
+.btn{
+  background-color: #fff;
+  border-radius: 30px;
+  color: #524A4A;
+  padding: 7px 41px;
+  cursor: pointer;
+}
